@@ -1,4 +1,4 @@
-PkgInfo
+PkgInfo [![Build Status](https://travis-ci.org/lnsp/pkginfo.svg?branch=master)](https://travis-ci.org/lnsp/pkginfo)
 =========
 
 Package pkginfo provides utilities to store package metadata.
