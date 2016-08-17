@@ -20,7 +20,7 @@ type PackageVersion struct {
 	Build               string
 }
 
-func (pkgVersion *PackageVersion) String() string {
+func (pkgVersion PackageVersion) String() string {
 	base := fmt.Sprintf("%d.%d.%d", pkgVersion.Major, pkgVersion.Minor, pkgVersion.Patch)
 	if pkgVersion.Identifier != "" {
 		base += "-" + pkgVersion.Identifier
@@ -31,6 +31,6 @@ func (pkgVersion *PackageVersion) String() string {
 	return base
 }
 
-func (pkgInfo *PackageInfo) String() string {
+func (pkgInfo PackageInfo) String() string {
 	return fmt.Sprintf("%s %s", pkgInfo.Name, pkgInfo.Version.String())
 }
